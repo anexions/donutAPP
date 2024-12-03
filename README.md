@@ -1,2 +1,8 @@
 # donutAPP
-proyecto personal
+Proyecto personal para practicar
+
+Tecnologías usadas:
+
+Angular | Featherjs | MySQL
+
+Pasos:
