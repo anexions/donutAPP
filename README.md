@@ -3,7 +3,7 @@ Proyecto personal para practicar
 
 Tecnologías usadas:
 
-Angular | Featherjs | MySQL
+Angular | Featherjs | MySQL | MySQL WorkBenc | Postman
 
 Pasos:
 n-
