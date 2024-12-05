@@ -1,3 +1,13 @@
-<h1>Gestión de Donuts</h1>
-<p>Bienvenido a la app de gestión de donuts. Aquí podrás añadir, listar, actualizar y eliminar donuts.</p>
+<h2>Añadir un nuevo Donut</h2>
+<form (ngSubmit)="createDonut()">
+  <label for="flavor">Sabor:</label>
+  <input id="flavor" type="text" [(ngModel)]="newDonut.flavor" name="flavor" required />
 
+  <label for="price">Precio:</label>
+  <input id="price" type="number" [(ngModel)]="newDonut.price" name="price" required />
+
+  <label for="quantity">Cantidad:</label>
+  <input id="quantity" type="number" [(ngModel)]="newDonut.quantity" name="quantity" required />
+
+  <button type="submit">Añadir Donut</button>
+</form>

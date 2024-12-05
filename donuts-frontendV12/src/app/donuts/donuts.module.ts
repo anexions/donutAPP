@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { DonutsRoutingModule } from './donuts-routing.module';
 import { DonutsComponent } from './donuts.component';
-
+import { FormsModule } from '@angular/forms';
+import { DonutsRoutingModule } from './donuts-routing.module';
 
 @NgModule({
-  declarations: [
-    DonutsComponent
-  ],
+  declarations: [DonutsComponent],
   imports: [
     CommonModule,
+    FormsModule, // Agrega esta línea
     DonutsRoutingModule
   ]
 })
