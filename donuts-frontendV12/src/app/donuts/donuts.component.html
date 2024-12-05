@@ -9,5 +9,17 @@
   <label for="quantity">Cantidad:</label>
   <input id="quantity" type="number" [(ngModel)]="newDonut.quantity" name="quantity" required />
 
-  <button type="submit">Añadir Donut</button>
+  <button type="submit">+</button>
 </form>
+
+<hr>
+
+<h1>Lista de Donuts</h1>
+<ul *ngIf="donuts.length > 0">
+  <li *ngFor="let donut of donuts">
+    Sabor: {{ donut.flavor }} - Precio: {{ donut.price }} - Cantidad: {{ donut.quantity }}
+  </li>
+</ul>
+<p *ngIf="donuts.length === 0">No hay donuts disponibles.</p>
+
+

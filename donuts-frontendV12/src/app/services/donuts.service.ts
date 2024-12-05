@@ -12,12 +12,14 @@ export class DonutsService {
   async getDonuts() {
     try {
       const response = await axios.get(`${this.baseUrl}/donuts`);
-      return response.data;
+      console.log('Respuesta completa del backend:', response.data); // Para verificar
+      return response.data.data || []; // Devuelve solo la lista de donuts
     } catch (error) {
       console.error('Error al obtener donuts:', error);
       throw error;
     }
   }
+  
 
   async createDonut(donut: any) {
     try {
@@ -29,13 +31,5 @@ export class DonutsService {
     }
   }
 
-  async deleteDonut(id: string) {
-    try {
-      const response = await axios.delete(`${this.baseUrl}/donuts/${id}`);
-      return response.data;
-    } catch (error) {
-      console.error('Error al eliminar donut:', error);
-      throw error;
-    }
-  }
+  
 }
